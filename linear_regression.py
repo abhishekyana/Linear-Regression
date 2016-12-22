@@ -1,4 +1,4 @@
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt # To plot the OUTPUT Graphically
 
 #function for a hypothesis calculation
 def hypo(t,x):
@@ -19,7 +19,7 @@ def gradient(lr,x,y,t,m):
     t[0]=temp0
     t[1]=temp1
     return t,sum2/m
-
+#find the minimum gradient for the J function
 def min_grad(lr,x,y,t,m):
     while not( -0.0087268677907587893<=gradient(lr,x,y,t,m)[1]<=0.0087268677907587893):
         a=gradient(lr,x,y,t,m)
